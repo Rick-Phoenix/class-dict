@@ -1,0 +1,41 @@
+{
+  "include": [
+    "*.ts",
+    "scripts",
+    "src",
+    "tests"
+  ],
+  "references": [],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "EsNext",
+      "Dom"
+    ],
+    "module": "NodeNext",
+    "moduleDetection": "force",
+    "moduleResolution": "nodenext",
+    "noEmitOnError": true,
+    "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "outDir": ".out",
+    "resolveJsonModule": true,
+    "rootDir": "src",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "EsNext",
+    "tsBuildInfoFile": ".out/.tsBuildInfoSrc",
+    "verbatimModuleSyntax": true
+  }
+}
+

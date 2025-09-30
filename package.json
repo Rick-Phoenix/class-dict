@@ -1,0 +1,38 @@
+{
+  "name": "class-dict",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Organize tailwind classes in categories",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "prepublishOnly": "pnpm run build"
+  },
+  "packageManager": "pnpm",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "keywords": [
+    "tailwind",
+    "css",
+    "classnames",
+    "utility"
+  ],
+  "devDependencies": {
+    "oxlint": "^1.19.0",
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.2"
+  }
+}
