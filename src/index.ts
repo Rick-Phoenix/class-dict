@@ -11,7 +11,10 @@ type ClassValue =
   | ClassDictionary
   | (() => ClassValue)
   | null
-  | undefined;
+  | undefined
+  // Just for compatibility with clsx's `ClassValue`
+  | number
+  | bigint;
 
 function process_value(value: ClassValue): string | string[] | undefined {
   if (!value) {
@@ -22,6 +25,8 @@ function process_value(value: ClassValue): string | string[] | undefined {
     return process_value(value());
   } else if (typeof value === "string") {
     return value;
+  } else if (typeof value === "number" || typeof value === "bigint") {
+    return String(value);
   } else if (Array.isArray(value)) {
     let classes: string[] = [];
 
