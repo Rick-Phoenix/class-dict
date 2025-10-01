@@ -28,7 +28,6 @@
     "isolatedModules": true,
     "outDir": ".out",
     "resolveJsonModule": true,
-    "rootDir": "src",
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
@@ -38,4 +37,3 @@
     "verbatimModuleSyntax": true
   }
 }
-

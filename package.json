@@ -21,7 +21,6 @@
   },
   "packageManager": "pnpm",
   "dependencies": {
-    "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.1"
   },
   "keywords": [
@@ -33,6 +32,11 @@
   "devDependencies": {
     "oxlint": "^1.19.0",
     "tsdown": "^0.15.6",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rick-Phoenix/class-dict"
   }
 }
